@@ -1,33 +1,33 @@
 class Calculator {
-    let num1:Int = 0
-    let num2:Int = 0
+    let num1:Double
+    let num2:Double
 
-    init(num1Input:Int,num2Input:Int){
+    init(num1Input:Double,num2Input:Double){
         self.num1=num1Input
         self.num2=num2Input
     }
     
     func calculate(op:String){
-        if(num1>(-100) && num2<100){
+        if(num1>(-100) && num2<100 && num1<100 && num2>(-100)){
             var ans:Double
             if(op == "+"){
-                ans = Double(num1 + num2)
+                ans = num1 + num2
                 println("\(num1) + \(num2) = \(ans)")
             }
             else if(op == "-"){
-                ans = Double(num1 - num2)
+                ans = num1 - num2
                 println("\(num1) - \(num2) = \(ans)")
             }
             else if(op == "*"){
-                ans = Double(num1 * num2)
+                ans = num1 * num2
                 println("\(num1) * \(num2) = \(ans)")
             }
             else if(op == "/"){
-                ans = Double(num1 / num2)
+                ans = num1 / num2
                 println("\(num1) / \(num2) = \(ans)")
             }
             else if(op == "%"){
-                ans = Double(num1 % num2)
+                ans = num1 % num2
                 println("\(num1) % \(num2) = \(ans)")
             }
             else{
@@ -39,5 +39,5 @@ class Calculator {
         }
     }
 }
-let cal=Calculator(num1Input:-45,num2Input:40)
-cal.calculate("%")
+let cal=Calculator(num1Input:4,num2Input:10)
+cal.calculate("/")
