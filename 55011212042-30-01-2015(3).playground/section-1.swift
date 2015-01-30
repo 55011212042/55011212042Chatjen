@@ -8,7 +8,7 @@ class Calculator {
     }
     
     func calculate(op:String){
-        if(num1>=(-100) && num2<100){
+        if(num1>(-100) && num2<100){
             var ans:Double
             if(op == "+"){
                 ans = Double(num1 + num2)
