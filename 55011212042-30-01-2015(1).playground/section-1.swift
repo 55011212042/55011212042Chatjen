@@ -2,13 +2,7 @@ class MyZoo {
     let anls:[String] = ["snake","chicken","whale","dinosaur","kingkong"]
     let feedOfAnls:[String] = ["bread","chocolate","jelly","butter","cheese"]
     
-    let anl:String
-    
-    init(animal: String) {
-        self.anl=animal
-    }
-    
-    func searching() -> String {
+    func searching(anl:String) -> String {
         var feed:String = ""
         for(var i=0 ; i<anls.count ; i++){
             if(anls[i]==anl){
@@ -24,5 +18,7 @@ class MyZoo {
     }
 }
 
-let start = MyZoo(animal: "dinosaur")
-let feed=start.searching()
+let start = MyZoo()
+println(start.searching("dinosaur"))
+println(start.searching("whale"))
+println(start.searching("cat"))

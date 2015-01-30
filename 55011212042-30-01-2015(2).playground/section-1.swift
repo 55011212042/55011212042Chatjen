@@ -1,10 +1,5 @@
 class UserPassword {
     var UserAndPass:[String:String] = ["Jirapan":"Js042","Parkphoom":"Pk000"]
-    let userInput:String
-    
-    init(user: String) {
-        self.userInput=user
-    }
     
     func searchPass(uSearch:String) -> String {
         var passSreach:String = ""
@@ -14,7 +9,7 @@ class UserPassword {
             }
         }
         if(passSreach==""){
-            println(">>Not have \(uSearch) in Database.")
+            println(">>Not have User : \(uSearch) in Database.")
         } else {
             println(">>User : \(uSearch) Password : \(passSreach).")
         }
@@ -33,7 +28,7 @@ class UserPassword {
             }
         }
         if(passSreach==""){
-            println(">>Not have \(uDel) in Database.")
+            println(">>Not have User : \(uDel) in Database.")
         } else {
             println(">>DELETE User : \(uDel) successfull.")
             UserAndPass[uDel] = nil
@@ -55,8 +50,15 @@ class UserPassword {
     }
 }
 
-let start = UserPassword(user: "Jirapan")
+let start = UserPassword()
+
 start.searchPass("Park")
+start.searchPass("Parkphoom")
+
 start.add("Sirinthorn", pAdd: "Sr000")
+
 start.del("Sirin")
+start.del("Sirinthorn")
+
 start.edit("Jirapan", pEdit: "Js240")
+start.edit("Jiraporn", pEdit: "Jf555")
