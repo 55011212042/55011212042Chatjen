@@ -18,6 +18,7 @@
 		FDC66D1B1A84C763003EFC54 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC66D181A84C763003EFC54 /* two.png */; };
 		FDC66D1C1A84C763003EFC54 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC66D191A84C763003EFC54 /* 3.png */; };
 		FDC66D1E1A84C81C003EFC54 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC66D1D1A84C81C003EFC54 /* number3.png */; };
+		FDC66D221A84CE36003EFC54 /* Reset-200.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC66D211A84CE36003EFC54 /* Reset-200.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FDC66D181A84C763003EFC54 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
 		FDC66D191A84C763003EFC54 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		FDC66D1D1A84C81C003EFC54 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
+		FDC66D211A84CE36003EFC54 /* Reset-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reset-200.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		FDC66CF31A84B4FE003EFC54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDC66D211A84CE36003EFC54 /* Reset-200.png */,
 				FDC66D1D1A84C81C003EFC54 /* number3.png */,
 				FDC66D171A84C763003EFC54 /* 300px-ONE_Campaign.png */,
 				FDC66D181A84C763003EFC54 /* two.png */,
@@ -209,6 +212,7 @@
 			files = (
 				FDC66CFB1A84B4FE003EFC54 /* Main.storyboard in Resources */,
 				FDC66D1E1A84C81C003EFC54 /* number3.png in Resources */,
+				FDC66D221A84CE36003EFC54 /* Reset-200.png in Resources */,
 				FDC66D001A84B4FE003EFC54 /* LaunchScreen.xib in Resources */,
 				FDC66D1A1A84C763003EFC54 /* 300px-ONE_Campaign.png in Resources */,
 				FDC66D1C1A84C763003EFC54 /* 3.png in Resources */,
@@ -425,6 +429,7 @@
 				FDC66D111A84B4FE003EFC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDC66D121A84B4FE003EFC54 /* Build configuration list for PBXNativeTarget "AppClassProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +438,7 @@
 				FDC66D141A84B4FE003EFC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
