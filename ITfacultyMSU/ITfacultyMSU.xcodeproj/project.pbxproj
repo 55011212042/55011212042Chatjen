@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD57D9DC1AA99D8400ED2680 /* ViewControllerPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D9DB1AA99D8400ED2680 /* ViewControllerPage2.swift */; };
 		FD85E2571AA06CD6004FEE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85E2561AA06CD6004FEE20 /* AppDelegate.swift */; };
 		FD85E2591AA06CD6004FEE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85E2581AA06CD6004FEE20 /* ViewController.swift */; };
 		FD85E25C1AA06CD6004FEE20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD85E25A1AA06CD6004FEE20 /* Main.storyboard */; };
 		FD85E25E1AA06CD6004FEE20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD85E25D1AA06CD6004FEE20 /* Images.xcassets */; };
 		FD85E2611AA06CD6004FEE20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD85E25F1AA06CD6004FEE20 /* LaunchScreen.xib */; };
 		FD85E26D1AA06CD7004FEE20 /* ITfacultyMSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85E26C1AA06CD7004FEE20 /* ITfacultyMSUTests.swift */; };
-		FD85E2791AA07468004FEE20 /* bossIT.png in Resources */ = {isa = PBXBuildFile; fileRef = FD85E2761AA07468004FEE20 /* bossIT.png */; };
-		FD85E27A1AA07468004FEE20 /* IT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD85E2771AA07468004FEE20 /* IT.jpg */; };
-		FD85E27B1AA07468004FEE20 /* logoIT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD85E2781AA07468004FEE20 /* logoIT.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD57D9DB1AA99D8400ED2680 /* ViewControllerPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPage2.swift; sourceTree = "<group>"; };
 		FD85E2511AA06CD6004FEE20 /* ITfacultyMSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITfacultyMSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85E2551AA06CD6004FEE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD85E2561AA06CD6004FEE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +38,6 @@
 		FD85E2661AA06CD7004FEE20 /* ITfacultyMSUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITfacultyMSUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD85E26B1AA06CD7004FEE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD85E26C1AA06CD7004FEE20 /* ITfacultyMSUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITfacultyMSUTests.swift; sourceTree = "<group>"; };
-		FD85E2761AA07468004FEE20 /* bossIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bossIT.png; sourceTree = "<group>"; };
-		FD85E2771AA07468004FEE20 /* IT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IT.jpg; sourceTree = "<group>"; };
-		FD85E2781AA07468004FEE20 /* logoIT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoIT.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +81,7 @@
 			children = (
 				FD85E2561AA06CD6004FEE20 /* AppDelegate.swift */,
 				FD85E2581AA06CD6004FEE20 /* ViewController.swift */,
+				FD57D9DB1AA99D8400ED2680 /* ViewControllerPage2.swift */,
 				FD85E25A1AA06CD6004FEE20 /* Main.storyboard */,
 				FD85E25D1AA06CD6004FEE20 /* Images.xcassets */,
 				FD85E25F1AA06CD6004FEE20 /* LaunchScreen.xib */,
@@ -96,9 +93,6 @@
 		FD85E2541AA06CD6004FEE20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD85E2761AA07468004FEE20 /* bossIT.png */,
-				FD85E2771AA07468004FEE20 /* IT.jpg */,
-				FD85E2781AA07468004FEE20 /* logoIT.jpg */,
 				FD85E2551AA06CD6004FEE20 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -201,10 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD85E27A1AA07468004FEE20 /* IT.jpg in Resources */,
-				FD85E27B1AA07468004FEE20 /* logoIT.jpg in Resources */,
 				FD85E25C1AA06CD6004FEE20 /* Main.storyboard in Resources */,
-				FD85E2791AA07468004FEE20 /* bossIT.png in Resources */,
 				FD85E2611AA06CD6004FEE20 /* LaunchScreen.xib in Resources */,
 				FD85E25E1AA06CD6004FEE20 /* Images.xcassets in Resources */,
 			);
@@ -224,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD57D9DC1AA99D8400ED2680 /* ViewControllerPage2.swift in Sources */,
 				FD85E2591AA06CD6004FEE20 /* ViewController.swift in Sources */,
 				FD85E2571AA06CD6004FEE20 /* AppDelegate.swift in Sources */,
 			);
@@ -417,6 +409,7 @@
 				FD85E2721AA06CD7004FEE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD85E2731AA06CD7004FEE20 /* Build configuration list for PBXNativeTarget "ITfacultyMSUTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +418,7 @@
 				FD85E2751AA06CD7004FEE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

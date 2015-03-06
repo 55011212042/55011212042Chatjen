@@ -40,11 +40,65 @@
                     <connections>
                         <outlet property="head" destination="0Mx-io-FDx" id="F87-dM-YQ5"/>
                         <outlet property="tableView" destination="zU3-KG-gbN" id="GXP-gk-Oof"/>
+                        <segue destination="gm1-Ty-GTA" kind="modal" identifier="next" id="pP6-Ea-o1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439.5" y="428.5"/>
+        </scene>
+        <!--View Controller Page2-->
+        <scene sceneID="wkU-Ha-SlG">
+            <objects>
+                <viewController id="gm1-Ty-GTA" customClass="ViewControllerPage2" customModule="ITfacultyMSU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qYT-xS-65b"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hmn-HL-6YH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIf-Kv-VZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jik-r2-ceB">
+                                <rect key="frame" x="23" y="55" width="329" height="317"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="รายละเอียด" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjZ-sY-o9q">
+                                <rect key="frame" x="23" y="449" width="329" height="198"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bca-wg-DCB">
+                                <rect key="frame" x="0.0" y="11" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="คณะวิทยาการสารสนเทศ" id="i9v-vO-GCO">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="GW9-Wp-4VO">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="show" identifier="" id="XWs-u2-Zni"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="สาขา" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-vg-1VT">
+                                <rect key="frame" x="23" y="375" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="detailShow" destination="HjZ-sY-o9q" id="GSm-1L-IWK"/>
+                        <outlet property="imageShow" destination="jik-r2-ceB" id="Bbv-tG-boA"/>
+                        <outlet property="majorShow" destination="dBb-vg-1VT" id="SX2-38-1ER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UqM-Wa-Ltn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.5" y="428.5"/>
         </scene>
     </scenes>
 </document>
