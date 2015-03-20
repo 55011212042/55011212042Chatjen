@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         taxPctLabel.text="Tax Percentage (\(Int(taxPctSlider.value))%)"
         resultsTextView.text=""
     }
-    @IBOutlet weak var tableView: UITableView!
+ //   @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableView: UITableView!
 }
 
