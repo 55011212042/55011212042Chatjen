@@ -77,17 +77,13 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         return cell
     }
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        let alert=UIAlertController(title: "It selected", message: "\(items[indexPath.row])", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alert.addAction(UIAlertAction(title: "OK",
-            style: UIAlertActionStyle.Default,
-            handler: {
-                (alert: UIAlertAction!) in println("An alert of type \(alert.style.hashValue) was tapped!")
-                // เพิ่มการลบ
-        }))
-        
-        self.presentViewController(alert, animated: true, completion: nil)
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let cellID: NSString = "cell"
+            var Cell: UITableViewCell=tableView.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell
+            var data: NSManagedObject = items[indexPath.row] as NSManagedObject
+            data.delete(0)
+        }
     }
     func saveName(name: String){
         let appDelegate=UIApplication.sharedApplication().delegate as AppDelegate
