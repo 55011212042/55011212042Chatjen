@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38263238-7F24-4EB9-9471-651B05D42C76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Animation4</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EF52591AB94507D019422631C4AE3703842405C8</key>
+		<string>https://github.com/55011212042/55011212042Chatjen.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Animation4/Animation4.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EF52591AB94507D019422631C4AE3703842405C8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/55011212042/55011212042Chatjen.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EF52591AB94507D019422631C4AE3703842405C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF52591AB94507D019422631C4AE3703842405C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>55011212042Chatjen</string>
+		</dict>
+	</array>
+</dict>
+</plist>
