@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let container=UIView()
     let redSquare=UIView()
     let blueSquare=UIView()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         self.blueSquare.frame=redSquare.frame
         
         self.redSquare.backgroundColor=UIColor.redColor()
-        self.blueSquare.backgroundColor=UIColor.blueColor()
+        self.blueSquare.backgroundColor=UIColor.greenColor()
         
         self.container.addSubview(self.redSquare)
     }
