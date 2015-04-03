@@ -8,7 +8,6 @@
 
 import UIKit
 import AssetsLibrary
-import MobileCoreServices
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -16,10 +15,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var filter: CIFilter!
     var beginImage: CIImage!
     var orientation: UIImageOrientation = .Up // New
-    
-    var imagePicker: UIImagePickerController!
-    var newMedia: Bool!
-
     
     @IBOutlet weak var UIImageCiew: UIImageView!
     
@@ -29,7 +24,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.presentViewController(pickerC, animated: true, completion: nil)
     }
     @IBAction func savePhoto(sender: AnyObject) {
-   /*     // 1
+        // 1
         let imageToSave = filter.outputImage
         
         // 2
@@ -41,15 +36,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // 4
         let library = ALAssetsLibrary()
         library.writeImageToSavedPhotosAlbum(cgimg,metadata: imageToSave.properties(),completionBlock: nil)
-        */
-        
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .Camera
-        imagePicker.mediaTypes = [kUTTypeImage as NSString]
-        presentViewController(imagePicker, animated: true, completion: nil)
-        
-        newMedia = true
-        
     }
     @IBAction func mountSliderValueChanged(sender: UISlider) {
         let sliderValue = sender.value
@@ -82,11 +68,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         // 2
         let newImage = UIImage(CGImage: cgimg)
-   //     self.UIImageCiew.image = newImage
-  //      self.logAllFilters()
-        
-        imagePicker=UIImagePickerController()
-        imagePicker.delegate=self
+        self.UIImageCiew.image = newImage
+        self.logAllFilters()
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,14 +86,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.mountSliderValueChanged(amountSlider)
     }
     
- /*   func logAllFilters() {
+    func logAllFilters() {
         let properties = CIFilter.filterNamesInCategory(kCICategoryBuiltIn)
         println(properties)
         for filterName: AnyObject in properties {
             let fltr = CIFilter(name: filterName as String)
             println(fltr.attributes())
         }
-    } */
+    }
     
     func oldPhoto(img: CIImage, withAmount intensity: Float) -> CIImage {
         // 1

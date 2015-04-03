@@ -13,6 +13,7 @@
 		FD823CD11ACE6BA5007E8C29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD823CD01ACE6BA5007E8C29 /* Images.xcassets */; };
 		FD823CD41ACE6BA5007E8C29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD823CD21ACE6BA5007E8C29 /* LaunchScreen.xib */; };
 		FD823CE01ACE6BA5007E8C29 /* ImagePickerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD823CDF1ACE6BA5007E8C29 /* ImagePickerControllerTests.swift */; };
+		FD823CEA1ACE80A9007E8C29 /* 5551234.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD823CE91ACE80A9007E8C29 /* 5551234.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FD823CD91ACE6BA5007E8C29 /* ImagePickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD823CDE1ACE6BA5007E8C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD823CDF1ACE6BA5007E8C29 /* ImagePickerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerTests.swift; sourceTree = "<group>"; };
+		FD823CE91ACE80A9007E8C29 /* 5551234.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5551234.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		FD823CC71ACE6BA5007E8C29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD823CE91ACE80A9007E8C29 /* 5551234.jpg */,
 				FD823CC81ACE6BA5007E8C29 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +198,7 @@
 				FD823CCF1ACE6BA5007E8C29 /* Main.storyboard in Resources */,
 				FD823CD41ACE6BA5007E8C29 /* LaunchScreen.xib in Resources */,
 				FD823CD11ACE6BA5007E8C29 /* Images.xcassets in Resources */,
+				FD823CEA1ACE80A9007E8C29 /* 5551234.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

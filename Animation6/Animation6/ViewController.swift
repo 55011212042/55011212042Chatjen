@@ -17,23 +17,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         butterfly.image = UIImage(named: "Butterfly.png")
-        butterfly.frame = CGRect(x: 50, y: 50, width: 50, height: 50)
+        butterfly.frame = CGRect(x: 30, y: 50, width: 300, height: 300)
         self.view.addSubview(butterfly)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func animationButton(sender: AnyObject) {
         let viewsToAnimate = [butterfly]
         UIView.performSystemAnimation(UISystemAnimation.Delete, onViews: viewsToAnimate, options: nil, animations: {
             
-        }, completion: { finished in
+        },
+        completion: {
+            finished in
             
         })
     }
-
 }
 

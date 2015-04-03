@@ -18,13 +18,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.container.frame=CGRect(x: 60, y: 60, width: 200, height: 200)
+        self.container.frame=CGRect(x: 40, y: 50, width: 300, height: 520)
         self.view.addSubview(container)
         
-        self.redSquare.frame=CGRect(x: 0, y: 0, width: 200, height: 200)
+        self.redSquare.frame=CGRect(x: 0, y: 0, width: 300, height: 520)
         self.blueSquare.frame=redSquare.frame
         
-        self.redSquare.backgroundColor=UIColor.redColor()
+        self.redSquare.backgroundColor=UIColor.blueColor()
         self.blueSquare.backgroundColor=UIColor.greenColor()
         
         self.container.addSubview(self.redSquare)
@@ -32,23 +32,9 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func animateButtonTapped(sender: AnyObject) {
-        
- /*       let views=(frontView: self.redSquare, backView: self.blueSquare)
-        
-        let transitionOption=UIViewAnimationOptions.TransitionCurlUp
-        
-        UIView.transitionWithView(self.container, duration: 1.0, options: transitionOption, animations: {
-            views.frontView.removeFromSuperview()
-        
-            self.container.addSubview(views.backView)
-        }, completion: { finished in
-    
-    
-        })      */
         
         var views: (frontView: UIView, backView: UIView)
         
@@ -61,7 +47,6 @@ class ViewController: UIViewController {
         let transitionOptions=UIViewAnimationOptions.TransitionCurlUp
         
         UIView.transitionFromView(views.frontView, toView: views.backView, duration: 1.0, options: transitionOptions, completion: nil)
-        
         
     }
     
