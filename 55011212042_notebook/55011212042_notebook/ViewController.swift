@@ -78,12 +78,16 @@ class ViewController: UIViewController,UITableViewDataSource {
         return cell
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            let cellID: NSString = "cell"
-            var Cell: UITableViewCell=tableView.dequeueReusableCellWithIdentifier(cellID) as UITableViewCell
-            var data: NSManagedObject = items[indexPath.row] as NSManagedObject
-            data.delete(0)
+// delete on view
+        let appDel:AppDelegate=UIApplication.sharedApplication().delegate as AppDelegate
+        let context:NSManagedObjectContext=appDel.managedObjectContext!
+        if editingStyle == UITableViewCellEditingStyle.Delete{
+            context.deleteObject(items[indexPath.row] as NSManagedObject)
+            items.removeAtIndex(indexPath.row)
+            context.save(nil)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
+        
     }
     func saveName(name: String){
         let appDelegate=UIApplication.sharedApplication().delegate as AppDelegate

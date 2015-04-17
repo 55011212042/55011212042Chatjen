@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         self.redSquare.frame=CGRect(x: 0, y: 0, width: 300, height: 520)
         self.blueSquare.frame=redSquare.frame
         
-        self.redSquare.backgroundColor=UIColor.blueColor()
-        self.blueSquare.backgroundColor=UIColor.greenColor()
+        self.redSquare.backgroundColor=UIColor.purpleColor()
+        self.blueSquare.backgroundColor=UIColor.grayColor()
         
         self.container.addSubview(self.redSquare)
     }
@@ -44,9 +44,9 @@ class ViewController: UIViewController {
             views=(frontView: self.blueSquare, backView: self.redSquare)
         }
         
-        let transitionOptions=UIViewAnimationOptions.TransitionCurlUp
+        let transitionOptions=UIViewAnimationOptions.TransitionCurlDown
         
-        UIView.transitionFromView(views.frontView, toView: views.backView, duration: 1.0, options: transitionOptions, completion: nil)
+        UIView.transitionFromView(views.frontView, toView: views.backView, duration: 3, options: transitionOptions, completion: nil)
         
     }
     

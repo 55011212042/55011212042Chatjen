@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     let butterfly=UIImageView()
     
-    let duration=2.0
+    let duration=0.25
     let delay=0.0
     let options=UIViewKeyframeAnimationOptions.CalculationModeLinear
 
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         butterfly.image=UIImage(named: "Butterfly.png")
-        butterfly.frame=CGRect(x: 50, y: 50, width: 50, height: 50)
+        butterfly.frame=CGRect(x: 50, y: 50, width: 200, height: 200)
         self.view.addSubview(butterfly)
         
         
